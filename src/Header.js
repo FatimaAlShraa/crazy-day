@@ -2,8 +2,10 @@ import React from 'react';
 
 class Header extends React.Component{
     render(){
-        return(
-          
+        return
+
+           
+
             <h1>Gallery Of horn</h1>
            
         )

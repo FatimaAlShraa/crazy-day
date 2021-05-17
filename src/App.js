@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
+
 import Main from './Main';
 
 
@@ -10,7 +11,11 @@ class App extends React.Component{
     return(
       <div>
         {/* <h1>hello</h1> */}
-       < Header/>
+
+      
+
+        <Header />
+
         <Main/>
         <Footer/>
 
