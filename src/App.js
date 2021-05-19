@@ -34,6 +34,11 @@ class App extends React.Component{
       show:false,
     })
   }
+  showFilter=(newStuff)=>{
+    this.setState({
+      Horendata: newStuff
+    })
+  }
   render(){
     return(
       <div>
@@ -51,6 +56,7 @@ class App extends React.Component{
         <Main
         beastArr={this.state.dataArr}
         showstuff={this.showstuff}
+        showFilter={this.showFilter}
         />
         <Footer/>
         
