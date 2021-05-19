@@ -16,20 +16,15 @@ class HornedBeast extends React.Component{
             numberOfVote: this.state.numberOfVote +1,
         })
     }
+    sendData =()=>{
+        this.props.showstuff(this.props.title)
+    }
     render(){
         return(
             <div>
 
-                {/* <h3>{this.props.title}</h3>
-                <img src={this.props.imgUrl} alt ={this.props.title} title={this.props.title}/>
-
-                <h3>{this.props.title}</h3>
-                <img src={this.props.imageUrl} alt ={this.props.title} title ={this.props.title}/>
-
-                <p>
-                    {this.props.description}
-                </p> */}
-                <Card style={{ width: '18rem' }}>
+               
+                <Card style={{ width: '18rem' }} onClick={this.sendData}>
           <Card.Img  variant="top" src={this.props.imgUrl} />
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
